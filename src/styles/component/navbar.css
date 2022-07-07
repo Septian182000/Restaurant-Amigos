@@ -1,0 +1,80 @@
+  .app-bar {
+    padding: 8px 16px;
+    background-color: #3A3845;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+   
+  .app-bar .app-bar__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .app-bar .app-bar__menu #hamburgerButton{
+    color: white;
+    display: block;
+  }
+   
+  .app-bar .app-bar__menu button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .app-bar .app-bar__brand {
+    display: flex;
+    align-items: center;
+  }
+   
+  .app-bar .app-bar__brand h1 a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+    user-select: none;
+    text-decoration: none;
+    min-width: 44px;
+    min-height: 44px;
+  }
+   
+  .app-bar .app-bar__navigation {
+    position: absolute;
+    top: 50px;
+    left: -180px;
+    width: 150px;
+    transition: all 0.3s;
+    padding: 8px;
+    overflow: hidden;
+    background-color: #3A3845;
+  }
+   
+  .app-bar .app-bar__navigation.open {
+    left: 0;
+  }
+   
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 8px;
+    margin-bottom: 5px;
+    width: 100%;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .app-bar .app-bar__navigation .nav-item a{
+    padding: 10px;
+  }
+
+  .app-bar .app-bar__navigation .nav-item :hover {
+    background-color: #F8B400;
+    border-radius: 10px;
+  }

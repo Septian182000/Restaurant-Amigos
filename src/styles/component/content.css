@@ -1,0 +1,107 @@
+  .item-restaurant {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 32px 0;
+    padding: 40px;
+  }
+  
+  .content {
+      padding: 32px;
+      margin: 0 auto;
+  }
+
+  #content-header{
+    padding: 10px;
+    margin: 30px auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #content-header > hr{
+    width: 80%;
+    height: 5px;
+    margin: 20px auto;
+    background-color: #3A3845;
+    border-radius: 10px;
+  }
+
+  .restaurant-item {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #F9F3EE;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+   
+  .restaurant-item_header {
+    position: relative;
+  }
+   
+  .restaurant-item .restaurant-item_header .restaurant-item_header_poster {
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    object-position: center;  
+  }
+   
+  .restaurant-item .restaurant-item_header .restaurant-item_city {
+    position: absolute;
+    padding: 8px;
+    bottom: 20px;
+    left: 0;
+    display: inline-block;
+    background-color: black;
+    color: white;
+  }
+   
+  .restaurant-item .restaurant-item_header .restaurant-item_city .restaurant-item_city_value {
+    margin-left: 10px;
+    letter-spacing: 2px;
+    color: white;
+  }
+
+  .restaurant-item .restaurant-item_header .restaurant-item_rating {
+    position: absolute;
+    padding: 8px;
+    bottom: 250px;
+    right: 0;
+    display: inline-block;
+    background-color: black;
+    color: white;
+  }
+   
+  .restaurant-item .restaurant-item_header .restaurant-item_rating .restaurant-item_rating_value {
+    margin-left: 5px;
+    letter-spacing: 2px;
+    color: white;
+  }
+
+  .fa-location-dot{
+    color: #db0000;
+  }
+   
+  .restaurant-item .restaurant-item_content {
+    padding: 16px;
+  }
+   
+  .restaurant-item .restaurant-item_content h1 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    text-align: center;
+  }
+   
+  .restaurant-item .restaurant-item_content h1 a {
+    color: #db0000;
+    text-decoration: none;
+    padding: 10px;
+  }
+   
+  .restaurant-item .restaurant-item_content p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+   
